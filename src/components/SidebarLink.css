@@ -1,0 +1,46 @@
+.sideicon{
+    --tw-text-opacity: 1;
+    color: rgba(217, 217, 217, var(--tw-text-opacity));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    
+}
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.hidden {
+    display: none;
+}
+.h-7 {
+    height: 1.75rem/* 28px */;
+}
+
+
+@media (min-width: 1280px) {
+    .xl\:justify-start {
+        justify-content: flex-start;
+    }
+    .sidebar_text {
+        display: inline;
+    }
+    .xl\:w-auto {
+        width: auto;
+    }
+    .xl\:h-auto {
+        height: auto;
+    }
+    .xl\:py-3 {
+        padding-top: 0.75rem/* 12px */;
+        padding-bottom: 0.75rem/* 12px */;
+    }
+    .xl\:px-4 {
+        padding-left: 1rem/* 16px */;
+        padding-right: 1rem/* 16px */;
+    }
+}
+

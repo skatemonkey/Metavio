@@ -1,0 +1,80 @@
+.sidebar{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem/* 8px */;
+    position: fixed;
+    height: 100%;
+}
+
+.metavio_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem/* 56px */;
+    height: 3.5rem/* 56px */;
+    padding: 0px;
+}
+
+.individual_icon{
+    margin-top: 1rem/* 16px */;
+    margin-bottom: 1rem/* 10px */;
+}
+
+.userprofile{
+    --tw-text-opacity: 1;
+    color: rgba(217, 217, 217, var(--tw-text-opacity));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.userprofilepic{
+    height: 2.5rem/* 40px */;
+    width: 2.5rem/* 40px */;
+    border-radius: 9999px;
+
+}
+.account_address{
+    display: none;
+    line-height: 1.25rem/* 20px */;
+    font-weight: 700;
+
+}
+
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
+}
+
+@media (min-width: 640px) {
+    .sm\:flex {
+        display: flex;
+    }
+}
+@media (min-width: 1280px) {
+    .xl\:items-start {
+        align-items: flex-start;
+    }
+    .xl\:w-\[340px\] {
+        width: 340px;
+    }
+    .xl\:ml-24 {
+        margin-left: 6rem/* 96px */;
+    }
+    .xl\:ml-auto {
+        margin-left: auto;
+    }
+    .xl\:-mr-5 {
+        margin-right: -1.25rem/* -20px */;
+    }
+    .xl\:mr-2\.5 {
+        margin-right: 0.625rem/* 10px */;
+    }
+    .xl\:inline {
+        display: inline;
+    }
+    
+}
