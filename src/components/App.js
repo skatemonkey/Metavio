@@ -91,7 +91,7 @@ class App extends Component {
   uploadImage = description => {
     console.log("Submitting file to ipfs...")
 
-    //adding file to the IPFS
+    //adding image to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
       console.log('Ipfs result', result)
       if (error) {

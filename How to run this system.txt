@@ -1,0 +1,5 @@
+1. Make sure node.js and Ganache is installed
+2. Open your browser and make sure the Metamask extenstion is installed
+3. Run Ganache
+4. Get into Metavio directory, and open terminal. After openning terminal, type "npm run start"
+5. The application is opened and now can be used. 

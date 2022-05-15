@@ -9,7 +9,7 @@ class Feed extends Component {
   render() {
     return (
       <div className='feed_section sm:ml-[73px] xl:ml-[370px]'>
-        {/* feed header */}
+        {/* Feed Header */}
         <div className='feed_header sm:justify-between'>
           <h2 className='sm:text-xl'>Home</h2>
           <div className='header_icon xl:px-0'>
@@ -17,7 +17,7 @@ class Feed extends Component {
           </div>
         </div>
 
-        {/* Input */}
+        {/* Upload Section */}
         <div className='input'>
           <form onSubmit={(event) => {
             event.preventDefault()
@@ -42,10 +42,11 @@ class Feed extends Component {
           </form>
         </div>
 
-        {/* Display all the images */}
+        {/* Display all the posts */}
         {this.props.images.map((image, key) => {
           return (
             <div className="card mb-4" key={key} >
+              {/* User profile image and address */}
               <div className="card-header">
                 <img
                   className='mr-2'
@@ -55,15 +56,20 @@ class Feed extends Component {
                 />
                 <small className="text-muted">{image.author}</small>
               </div>
+
               <ul id="imageList" className="list-group list-group-flush">
+                {/* Image and description */}
                 <li className="list-group-item">
                   <p class="text-center"><img src={`https://ipfs.infura.io/ipfs/${image.hash}`} style={{ maxWidth: '420px' }} /></p>
                   <p>{image.description}</p>
                 </li>
                 <li key={key} className="list-group-item py-2">
+                  {/* Total tip amount */}
                   <small className="float-left mt-1 text-muted">
                     TIPS: {window.web3.utils.fromWei(image.tipAmount.toString(), 'Ether')} ETH
                   </small>
+
+                  {/* Tip button */}
                   <button
                     className="btn btn-link btn-sm float-right pt-0"
                     name={image.id}
@@ -87,5 +93,5 @@ class Feed extends Component {
     );
   }
 }
-
+// btn btn-link btn-sm float-right pt-0
 export default Feed;

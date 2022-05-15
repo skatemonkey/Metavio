@@ -31,7 +31,7 @@ class Sidebar extends Component {
           <img src={photo} width="30" height="30" className="" alt="" />
         </div>
 
-        {/* Return Individual icon */}
+        {/* Navigation panel */}
         <div className='individual_icon xl:ml-24 space-y-2.5'>
           <SidebarLink text="Home" Icon={HomeIcon} active />
           <SidebarLink text="Explore" Icon={HashtagIcon} />
@@ -43,14 +43,12 @@ class Sidebar extends Component {
           <SidebarLink text="More" Icon={DotsCircleHorizontalIcon} />
         </div>
 
-        {/* User profile */}
+        {/* User profile Section*/}
         <div className='userprofile xl:ml-auto xl:-mr-5'>
 
           {this.props.account
             ? <img
               className='userprofilepic xl:mr-2.5'
-              // width='30'
-              // height='30'
               src={`data:image/png;base64,${new Identicon(this.props.account, 30).toString()}`}
             />
             : <span></span>
